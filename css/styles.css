@@ -11,15 +11,8 @@ body::after {
     height: 50%;
     background: linear-gradient(180deg, rgba(20,20,20,1) 40%, rgba(20,20,20,0) 100%);
 }
-
-body {
-
-    font-family: "Star", sans-serif;
-    overflow: hidden;
-    margin: 50% 0 0 0;
-    position: relative;    
+ 
    
-}
 body {
 
  background-image: url("/Users/karemindorus/Star-Wars-Crawl/STARS.jpg");
@@ -27,6 +20,9 @@ body {
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+    font-family: "Star", sans-serif;
+    overflow: hidden;
+    position: relative;    
 }
 
 
@@ -35,15 +31,13 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100% ;
-
-
 }
 
 
 .wrapper{
     display:flex;
     height: 100%;
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
     perspective: 350px;
 }
@@ -60,14 +54,21 @@ img {
  }
 
 
- h1, h2 {
+ h1 {
      font-size: 8vw;
-     text-align: center;
+     line-height: 9vw;
+    text-align: center;
 
  }
 
  @keyframes scroll {
-     from {top: 0; transform: translateZ(0) rotateX(20deg)}
-        to {top: -7000px; transform: translateZ(-2500px) rotateX(21deg)}     
+     from {top: 0; transform: translateZ(0) rotateX(20deg);}
+        to {top: -7500px; transform: translateZ(-2500px) rotateX(21deg);}   
  }
 
+
+
+@media only screen and (max-width: 380px){
+ .scroll-text {
+     font-size: 1vw;
+}
